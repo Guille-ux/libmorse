@@ -1,3 +1,4 @@
-
-# here is your builder, this works with zynk-lite
-
+call print("Thanks for Download!");
+call print("Creating 'lib' Directory...");
+call mkdir("lib");
+call print("Setup Finished!");

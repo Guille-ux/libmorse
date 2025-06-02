@@ -11,6 +11,6 @@
 		], 
 	"entries": 
 		{
-	
+			"libmorse-build":"bash libmorse/src/build.sh"
 		}
 }
