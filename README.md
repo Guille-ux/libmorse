@@ -1,8 +1,8 @@
 # libmorse
----
+
 *libmorse is a c library to translate characters to morse code*
 
-*Note: this only works on linux, because the build script is in bash, if you are in another system without ```gcc``` you will need to compile manually*
+***Note**: this only works on linux, because the build script is in bash, if you are in another system without ```gcc``` you will need to compile manually*
 
 ---
 
