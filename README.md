@@ -60,6 +60,14 @@
 
 ## Structures & Enums
 
+### Enums
+
+- ```Character```: a mid representation between ascii and morse.
+
+## Structures
+
+- ```String```: a structure that representates a string, it isn't used by now.
+
 ## License
 
 - MIT license : <https://mit-license.org>
