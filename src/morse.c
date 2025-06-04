@@ -79,6 +79,7 @@ Character ascii2character(char asciiCode) {
 }
 
 void character2morse(Character chara, char *buffer) {
+  switch (chara) {
   case MorseA: libmorse_memcpy((uint8_t *)".-", (uint8_t *)buffer, 2); break; // barras laterales separan simbolo
   case MorseB: libmorse_memcpy((uint8_t *)"-...", (uint8_t *)buffer, 4); break;
   case MorseC: libmorse_memcpy((uint8_t *)"-.-.", (uint8_t *)buffer, 4); break;
@@ -97,8 +98,8 @@ void character2morse(Character chara, char *buffer) {
   case MorseP: libmorse_memcpy((uint8_t *)".--.", (uint8_t *)buffer, 4); break;
   case MorseQ: libmorse_memcpy((uint8_t *)"--.-", (uint8_t *)buffer, 4); break;
   case MorseR: libmorse_memcpy((uint8_t *)".-.", (uint8_t *)buffer, 3); break;
-  case MorseS: libmorse_memcpy((uint8_t *)"...", (uint8_t *)buffer, 3; break;
-  case MorseT: libmorse_memcpy((uint8_t *)"-", (uint8_t *)buffer, 1; break;
+  case MorseS: libmorse_memcpy((uint8_t *)"...", (uint8_t *)buffer, 3); break;
+  case MorseT: libmorse_memcpy((uint8_t *)"-", (uint8_t *)buffer, 1); break;
   case MorseU: libmorse_memcpy((uint8_t *)"..-", (uint8_t *)buffer, 3); break;
   case MorseV: libmorse_memcpy((uint8_t *)"...-", (uint8_t *)buffer, 4); break;
   case MorseW: libmorse_memcpy((uint8_t *)".--", (uint8_t *)buffer, 3); break;
