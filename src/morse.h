@@ -5,23 +5,13 @@
 #ifndef MORSE_H
 #define MORSE_H
 
-#ifndef STDINT_H
-#define STDINT_H
+typedef unsigned char Bool;
 
-typedef unsigned char uint8_t;
-typedef unsigned short int uint16_t;
-typedef unsigned int uint32_t;
-typedef unsigned long long int uint64_t;
-typedef unsigned long int size_t;
+#define false 0
+#define true 1
 
-typedef unsigned char bool;
+#define null (void *)0
 
-#define FALSE 0
-#define TRUE 1
-
-#define NULL (void *)0
-
-#endif
 
 typedef enum {
   MorseA,
@@ -65,11 +55,11 @@ typedef enum {
 } Character;
 
 typedef struct {
- size_t len;
+ unsigned long int len;
  char *chars;
 } String;
 
-void libmorse_memcpy(uint8_t *src, uint8_t *dest, size_t len);
+void libmorse_memcpy(char *src, char *dest, unsigned long int len);
 
 Character ascii2character(char asciiCode);
 
